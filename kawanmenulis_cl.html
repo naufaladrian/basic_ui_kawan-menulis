@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body p,
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        height: 445px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .left-content {
+        width: 50%;
+      }
+      .right-content {
+        width: 50%;
+      }
+      button {
+        background-color: rgb(17, 153, 17);
+        color: white;
+        padding: 10px 0px;
+        width: 120px;
+        border: none;
+        border-radius: 90px;
+        cursor: pointer;
+      }
+      .gambar-kanan {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+      }
+      .logo {
+        height: 100%;
+      }
+      .content {
+        text-align: center;
+        width: 65%;
+        margin: auto;
+      }
+      .content h1 {
+        font-size: 28px;
+        padding: 20px;
+      }
+      .content p {
+        text-align: left;
+        font-size: 20px;
+      }
+      .quote {
+        display: flex;
+        background-color: silver;
+        justify-content: center;
+        align-items: center;
+      }
+      .text-quote {
+        width: 80%;
+      }
+      .main {
+        display: flex;
+        margin: 40px 40px;
+        align-items: center;
+      }
+      .main-text {
+        width: 500px;
+      }
+      .main-text p {
+        font-size: 18px;
+      }
+      .bottom-content {
+        width: 70%;
+        margin: auto;
+      }
+      .bottom-content h1 {
+        text-align: center;
+        font-size: 24px;
+      }
+      .bottom-content p {
+        font-size: 18px;
+      }
+      footer {
+        background-color: black;
+        color: white;
+        padding-bottom: 10px;
+        /* height: 200px; */
+      }
+      .information {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 88%;
+        margin: auto;
+        font-size: 16px;
+      }
+      .information div {
+        margin: 20px;
+      }
+      .information img {
+        width: 100%;
+        display: block;
+        margin: auto;
+      }
+      .information .inf {
+        width: 25%;
+      }
+      .copyright {
+        text-align: center;
+      }
+      .information-content {
+        display: flex;
+      }
+      .information-content .inf {
+        width: 50%;
+        height: auto;
+      }
+      .lg-bwh {
+        display: none;
+      }
+      @media screen and (max-width: 780px) {
+        .container {
+          display: block;
+          text-align: center;
+        }
+        .gambar-kanan {
+          display: none;
+        }
+        .right-content {
+          width: 100%;
+          margin-top: -35px;
+        }
+        .left-content {
+          width: 100%;
+        }
+        .content {
+          margin-top: 270px;
+          width: 95%;
+          padding: 10px;
+        }
+        .logo {
+          width: 100%;
+        }
+        .main {
+          display: block;
+        }
+        .main-image {
+          width: 100%;
+        }
+        .bottom-content {
+          width: 95%;
+          padding: 10px;
+        }
+        footer {
+          /* display: block; */
+          text-align: center;
+          height: 100%;
+        }
+        .information {
+          /* display: block */
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+        }
+        .information img {
+          display: none;
+        }
+        .information .inf {
+          width: 80%;
+          margin: auto;
+          font-size: 14px;
+        }
+        .information-content {
+          display: block;
+        }
+        .information-content .inf {
+          width: 100%;
+        }
+        .copyright {
+          width: 80%;
+          margin: auto;
+          margin-top: -20px;
+          font-size: 14px;
+        }
+        .lg-bwh {
+          display: block;
+          margin: auto;
+          width: 70%;
+        }
+      }
+    </style>
+  </head>
+  <body style="margin: 0px">
+    <div class="container">
+      <div class="left-content">
+        <img src="book.png" alt="book" class="logo" />
+      </div>
+      <div class="right-content">
+        <div class="text">
+          <h1 style="font-size: 72px">
+            Mari mahir<br />
+            menulis
+          </h1>
+          <p
+            id="teks"
+            style="font-style: italic; font-size: 28px; margin-top: -30px"
+          >
+            Karena menulis itu menyenangkan...
+          </p>
+          <button id="mulai" onclick="klik()">Mulai Menulis</button>
+        </div>
+        <img src="vector.png" alt="icon" class="gambar-kanan" />
+      </div>
+    </div>
+    <div class="content">
+      <h1>Mengapa KAWAN MENULIS bermanfaat?</h1>
+      <p>
+        Seiring kemajuan mahasiswa, untuk meningkatkan keterampilan menulis
+        mereka membutuhkan dukungan mendalam. Mereka perlu mengatur pemikiran
+        mereka dan belajar untuk mengkomunikasikan ide-ide mereka secara
+        tertulis dengan jelas. Keberagaman konteks penggunaan Bahasa Indonesia
+        di dalam keterampilan menulis menjadi tantangan tersendiri bagi
+        mahasiswa di dalam menulis paragraf. Hal ini sejalan dengan tugas
+        sumatif di perguruan tinggi dalam membuat tulisan ilmiah.
+      </p>
+    </div>
+    <div class="quote">
+      <div class="text-quote">
+        <h1>
+          "If there's a book that you want to read,<br />
+          but it hasn't been written yet, then you must write it."
+        </h1>
+        <p style="margin-top: 0">Toni Morrison</p>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main-image">
+        <img src="km1.png" style="width: 100%" />
+      </div>
+      <div class="main-text">
+        <h1>Apa itu KAWAN MENULIS?</h1>
+        <p>
+          Merupakan website yang didesain untuk membantu mahasiswa tingkat
+          perguruan tinggi dalam mendukung keterampilan menulis paragraf yang
+          baik dan benar.
+        </p>
+      </div>
+    </div>
+    <div class="bottom-content">
+      <h1>Bagaimana KAWAN MENULIS dapat membantu saya menulis?</h1>
+      <p>
+        Website ini didesain dengan melihat kebutuhan generasi muda yang penuh
+        dengan daya kreasi dan inovasi. Kesempatan untuk melakukan tes
+        diagnostik mandiri, mulai menulis, dan fitur bertemu tutor akan semakin
+        memperlengkapi cara penulisan paragraf yang baik dan benar.
+      </p>
+    </div>
+    <footer>
+      <div class="information">
+        <div>
+          <img src="kawan-menulis.png" />
+        </div>
+        <div class="inf">
+          <p>
+            Merupakan website yang didesain untuk membantu mahasiswa tingkat
+            perguruan tinggi dalam mendukung keterampilan menulis paragraf yang
+            baik dan benar.
+          </p>
+        </div>
+        <div class="information-content">
+          <div class="inf">
+            <p>Berada</p>
+            <p>Tes Diagstik</p>
+            <p>Belaar Meulis</p>
+          </div>
+          <div class="inf">
+            <p>Sumber belajar</p>
+            <p>Tutr</p>
+            <p>Tentang Kami</p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © 2021. Tim Pengembang Proyek Menulis UPH Teachers College.
+          All rights reserved.
+        </p>
+      </div>
+      <img src="kawan-menulis.png" class="lg-bwh" />
+    </footer>
+    <script>
+      function klik() {
+        const mulai = document.getElementById("mulai");
+        teks.textContent = "Karena menulis itu tidak menyenangkan...";
+      }
+    </script>
+  </body>
+</html>
